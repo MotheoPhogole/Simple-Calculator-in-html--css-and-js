@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="NGWATLE MOTHEO PHOGOLE"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Calculator</title>
+<meta name="description" content="A simple and modern calculator interface with basic arithmetic operations." />
+<link rel ="stylesheet" href="CssCalculatorInterface.css" />
+</head>
+<body>
+  <div class="calculator" role="region" aria-label="Calculator">
+    <div class="display" id="display" role="textbox" aria-live="polite" aria-atomic="true">0</div>
+    <div class="buttons">
+      <button class="clear" id="clear" aria-label="Clear all">C</button>
+      <button class="operator" data-operator="^" aria-label="Power">^</button>
+      <button class="operator" data-operator="/" aria-label="Divide">÷</button>
+      <button class="operator" data-operator="*" aria-label="Multiply">×</button>
+
+      <button data-number="7" aria-label="Seven">7</button>
+      <button data-number="8" aria-label="Eight">8</button>
+      <button data-number="9" aria-label="Nine">9</button>
+      <button class="operator" data-operator="-" aria-label="Minus">−</button>
+
+      <button data-number="4" aria-label="Four">4</button>
+      <button data-number="5" aria-label="Five">5</button>
+      <button data-number="6" aria-label="Six">6</button>
+      <button class="operator" data-operator="+" aria-label="Plus">+</button>
+
+      <button data-number="1" aria-label="One">1</button>
+      <button data-number="2" aria-label="Two">2</button>
+      <button data-number="3" aria-label="Three">3</button>
+      <button data-number="." aria-label="Decimal point">.</button>
+      <button data-number="0" style="grid-column: span 2;" aria-label="Zero">0</button>
+      <button class="equals" id="equals" aria-label="Equals">=</button>
+
+    </div>
+  </div>
+    <script src="JavaScriptCalculatorInterface.js"></script>
+</body>
+</html>
+

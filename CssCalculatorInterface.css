@@ -1,0 +1,81 @@
+ /*This code was created by NGWATLE MOTHEO PHOGOLE*/
+ /* Reset some styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      user-select: none;
+    }
+    .calculator {
+      background-color: #1e1e2f;
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+      width: 320px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+    }
+    .display {
+      background-color: #2e2e42;
+      border-radius: 12px;
+      padding: 15px 20px;
+      font-size: 2.5rem;
+      text-align: right;
+      letter-spacing: 3px;
+      overflow-x: auto;
+      white-space: nowrap;
+      min-height: 60px;
+      margin-bottom: 20px;
+      box-shadow: inset 2px 2px 5px #0e0e11, inset -2px -2px 5px #4a4a66;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    button {
+      background-color: #3a3a5c;
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 18px 0;
+      box-shadow: 0 6px #292946;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+    button:active {
+      transform: translateY(3px);
+      box-shadow: 0 3px #292946;
+    }
+    button.operator {
+      background-color: #ff7043;
+      box-shadow: 0 6px #cc5032;
+    }
+    button.operator:active {
+      background-color: #cc5032;
+    }
+    button.equals {
+      background-color: #43a047;
+      grid-column: span 2;
+      box-shadow: 0 6px #2c7a35;
+    }
+    button.equals:active {
+      background-color: #2c7a35;
+    }
+    button.clear {
+      background-color: #d32f2f;
+      box-shadow: 0 6px #971e1e;
+    }
+    button.clear:active {
+      background-color: #971e1e;
+    }
